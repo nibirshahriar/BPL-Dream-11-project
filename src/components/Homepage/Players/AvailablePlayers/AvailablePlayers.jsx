@@ -1,9 +1,14 @@
 import React from "react";
 import { FaFlag, FaUser } from "react-icons/fa";
 import Card from "../../../UI/card";
- 
 
-const AvailablePlayers = ({ players, setCoin,coin }) => {
+const AvailablePlayers = ({
+  players,
+  setCoin,
+  coin,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   console.log(players);
   return (
     <div>
@@ -14,6 +19,8 @@ const AvailablePlayers = ({ players, setCoin,coin }) => {
             player={player}
             setCoin={setCoin}
             coin={coin}
+            setSelectedPlayers={setSelectedPlayers}
+            selectedPlayers={selectedPlayers}
           />
         ))}
       </div>
