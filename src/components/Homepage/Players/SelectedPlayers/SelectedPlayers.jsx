@@ -2,8 +2,15 @@ import React from 'react';
 import { FaUser } from 'react-icons/fa';
 import { MdDelete } from 'react-icons/md';
 
-const SelectedPlayers = ({selectedPlayers}) => {
-    return (
+const SelectedPlayers = ({selectedPlayers,setSelectedPlayers,coin,setCoin}) => {
+
+const handleDeleteSelectPlayer=(player)=>{
+const filteredPlayers=selectedPlayers.filter(p=>p.playerName!==player.playerName);
+setSelectedPlayers(filteredPlayers);
+setCoin(coin+player.price);
+}    
+
+return (
       <div className="mt-8">
         <div className='space-y-5'>
           {selectedPlayers.map((player, index) => {
@@ -27,7 +34,10 @@ const SelectedPlayers = ({selectedPlayers}) => {
                     <p>{player.playerType}</p>
                   </div>
                 </div>
-                <button className="btn text-red-500 bg-red-50">
+                <button
+                  className="btn text-red-500 bg-red-50"
+                  onClick={() => handleDeleteSelectPlayer(player)}
+                >
                   {" "}
                   <MdDelete />{" "}
                 </button>
