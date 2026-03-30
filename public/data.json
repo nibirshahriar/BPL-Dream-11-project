@@ -17,7 +17,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 11500,
-    "playerImg": "https://i.ibb.co.com/mrBxbFvY/virat.webp"
+    "playerImg": "https://i.ibb.co.com/S7mXYXtg/babar.jpg"
   },
   {
     "playerName": "Ben Stokes",
@@ -27,7 +27,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 12500,
-    "playerImg": "https://i.ibb.co.com/mrBxbFvY/virat.webp"
+    "playerImg": "https://i.ibb.co.com/WpWjds7k/stokes.jpg"
   },
   {
     "playerName": "Shakib Al Hasan",
@@ -37,7 +37,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
     "price": 11000,
-    "playerImg": "https://i.ibb.co.com/mrBxbFvY/virat.webp"
+    "playerImg": "https://i.ibb.co.com/PZTLKZ8X/sakib.jpg"
   },
   {
     "playerName": "Mitchell Starc",
@@ -47,7 +47,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
     "price": 10500,
-    "playerImg": "https://i.ibb.co.com/mrBxbFvY/virat.webp"
+    "playerImg": "https://i.ibb.co.com/KcMHNwR3/starc.jpg"
   },
   {
     "playerName": "Jasprit Bumrah",
@@ -57,6 +57,6 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
     "price": 12000,
-    "playerImg": "https://i.ibb.co.com/mrBxbFvY/virat.webp"
+    "playerImg": "https://i.ibb.co.com/6J4Lstmx/bumrah.jpg"
   }
 ]
