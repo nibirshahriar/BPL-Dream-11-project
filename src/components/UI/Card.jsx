@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaFlag, FaUser } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Card = ({
   player,
@@ -14,11 +15,11 @@ const Card = ({
     if (newCoin >= 0) {
       setCoin(coin - player.price);
     } else {
-      alert("Not enough coin");
+      toast.error("Not enough coin");
       return;
     }
 
-    alert(`${player.playerName} is selected`);
+    toast.success(`${player.playerName} is selected`);
     setIsSelected(true);
 
     setSelectedPlayers([...selectedPlayers, player]);
@@ -71,8 +72,10 @@ const Card = ({
           <p className="font-bold text-sm">Price: ${player.price}</p>
 
           <button
-            className="px-3 py-1 text-sm border  text-black"
+            className="px-3 py-1 text-sm border  text-black  disabled:bg-gray-300 disabled:text-gray-600 disabled:border-gray-300 
+             disabled:cursor-not-allowed"
             onClick={handleChoosePlayer}
+            disabled={isSelected}
           >
             {isSelected ? "Selected" : "Choose Player"}
           </button>
